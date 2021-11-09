@@ -362,6 +362,7 @@ GameObject:
   - component: {fileID: 4221410394526797}
   - component: {fileID: 33436043244251125}
   - component: {fileID: 23154029625384893}
+  - component: {fileID: 33436043244251126}
   m_Layer: 0
   m_Name: SkyDome
   m_TagString: Untagged
@@ -693,6 +694,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1574029303325837}
   m_Mesh: {fileID: 4300000, guid: 1340630fb7a3267499177be33f281f05, type: 3}
+--- !u!114 &33436043244251126
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1574029303325837}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d55a9ca8ac4a5b4c88bf5aebc97f09f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Moon: {fileID: 1376476547619999}
+  Stars: {fileID: 1698135649279161}
+  Sun: {fileID: 1411731142587803}
+  cycleSpeed: 0.1
 --- !u!33 &33855152000172529
 MeshFilter:
   m_ObjectHideFlags: 0
