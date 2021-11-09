@@ -479,7 +479,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1411731142587803}
   m_LocalRotation: {x: -0.38268346, y: 0, z: -0, w: 0.92387956}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -522,7 +522,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e68f77e240a7f8643b5cc4253dc37516, type: 2}
+  - {fileID: 2100000, guid: e5d7b4787060b8b4e9b7ff975d094f69, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -709,6 +709,7 @@ MonoBehaviour:
   Moon: {fileID: 1376476547619999}
   Stars: {fileID: 1698135649279161}
   Sun: {fileID: 1411731142587803}
+  Light: {fileID: 386333995}
   cycleSpeed: 0.1
 --- !u!33 &33855152000172529
 MeshFilter:
