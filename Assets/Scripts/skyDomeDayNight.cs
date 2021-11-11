@@ -30,7 +30,7 @@ public class skyDomeDayNight : MonoBehaviour
     void Update()
     {
        CycleDay();
-       MoonAndSun();
+      
        SunLight();
 
     }
@@ -42,7 +42,7 @@ public class skyDomeDayNight : MonoBehaviour
         }
        
     }
-    void MoonAndSun(){ 
+    void MoonAndSun(){  //Turn on or off the Assets to represent day and night
         if(offSet >= 0.2 && offSet <= 0.7){
             Moon.SetActive(false);
             Stars.SetActive(false);
