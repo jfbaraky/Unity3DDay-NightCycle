@@ -7,10 +7,7 @@ public class skyDomeDayNight : MonoBehaviour
 {
     private Material material;
     
-    [Header("Sky Assets Settings")] //Set the moon, starts and sun objects
-    public GameObject Moon;
-    public GameObject Stars;
-    public GameObject Sun;
+   
     [Header("Light Settings")] //Set the moon, starts and sun objects
 
     public Light Light;
@@ -42,20 +39,7 @@ public class skyDomeDayNight : MonoBehaviour
         }
        
     }
-    void MoonAndSun(){  //Turn on or off the Assets to represent day and night
-        if(offSet >= 0.2 && offSet <= 0.7){
-            Moon.SetActive(false);
-            Stars.SetActive(false);
-            Sun.SetActive(true);
-        } 
-        else{
-             Moon.SetActive(true);
-            Stars.SetActive(true);
-            Sun.SetActive(false);
-        }
-
-
-    }   
+   
     void SunLight(){ //Increase and Decrease the intensity of the light with the cycle
 
         
