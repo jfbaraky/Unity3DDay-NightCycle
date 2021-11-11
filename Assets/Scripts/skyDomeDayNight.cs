@@ -6,7 +6,7 @@ using UnityEngine;
 public class skyDomeDayNight : MonoBehaviour
 {
     private Material material;
-    
+    public int days;
    
     [Header("Light Settings")] //Set the moon, starts and sun objects
 
@@ -16,7 +16,7 @@ public class skyDomeDayNight : MonoBehaviour
     static float t;
     [Header("Sky Movement Systems")]
     public float cycleSpeed; //Set how fast the night and day cycle will be by changing the offSet
-     private float offSet; //Set how the Cycle will start
+    public float offSet; //Set how the Cycle will start
     void Start()
     {
         material = GetComponent<Renderer>().material; // Gets the material of the Sky
@@ -36,6 +36,7 @@ public class skyDomeDayNight : MonoBehaviour
         material.SetTextureOffset("_MainTex" , new Vector2(offSet, 0));   // Increase the offset of the object in a certain rate 
         if(offSet >= 1){
             offSet = 0;
+            days += 1;
         }
        
     }

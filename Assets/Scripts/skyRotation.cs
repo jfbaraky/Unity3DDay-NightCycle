@@ -5,10 +5,10 @@ using UnityEngine;
 public class skyRotation : MonoBehaviour
 {
    public Vector3 rotationSpeed;
-   public skyDomeDayNight skyDomeDayNight;
+   private skyDomeDayNight skyDomeDayNight;
     void Start()
     {
-      
+       skyDomeDayNight = FindObjectOfType(typeof(skyDomeDayNight)) as skyDomeDayNight;
     }
 
 

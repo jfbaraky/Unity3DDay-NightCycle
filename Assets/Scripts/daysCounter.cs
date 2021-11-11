@@ -1,18 +1,25 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class daysCounter : MonoBehaviour
 {
-    // Start is called before the first frame update
+    private skyDomeDayNight skyDomeDayNight;
+    public TextMeshProUGUI dayCounter;
+ private int days;
+   
     void Start()
     {
-        
+        skyDomeDayNight = FindObjectOfType(typeof(skyDomeDayNight)) as skyDomeDayNight;
     }
 
-    // Update is called once per frame
+  
     void Update()
+
     {
+       
         
+        dayCounter.text = skyDomeDayNight.days.ToString("N0");
     }
 }
