@@ -5,7 +5,7 @@ using UnityEngine;
 public class skyRotation : MonoBehaviour
 {
    public Vector3 rotationSpeed;
-   public float cycleSpeed;
+   public skyDomeDayNight skyDomeDayNight;
     void Start()
     {
       
@@ -14,6 +14,6 @@ public class skyRotation : MonoBehaviour
 
     void Update()
     {
-          transform.Rotate(rotationSpeed* Time.deltaTime);
+          transform.Rotate(rotationSpeed * skyDomeDayNight.cycleSpeed  * Time.deltaTime); //Leave the rotation speed on 360 for better timing
     }
 }
